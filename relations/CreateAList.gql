@@ -1,0 +1,6 @@
+mutation CreateAList {
+  createList(data: { title: "Development" }) {
+    title
+    _id
+  }
+}

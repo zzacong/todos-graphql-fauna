@@ -1,0 +1,12 @@
+query FindAllTodos {
+  allTodos {
+    data {
+      _id
+      title
+      completed
+      list {
+        title
+      }
+    }
+  }
+}

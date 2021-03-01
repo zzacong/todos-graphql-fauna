@@ -1,0 +1,10 @@
+query FindSomeLetters {
+  allLetters(_size: 5) {
+    data {
+      _id
+      letter
+    }
+    before
+    after
+  }
+}

@@ -1,0 +1,16 @@
+mutation UpdateATodo {
+  updateTodo(
+    id: "291496523862114829"
+    data: {
+      title: "Build an awesome app!"
+      completed: true
+      list: { connect: "291496906386833933" }
+    }
+  ) {
+    title
+    completed
+    list {
+      title
+    }
+  }
+}

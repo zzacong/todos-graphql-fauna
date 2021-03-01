@@ -1,0 +1,15 @@
+mutation CreateAListedTodo {
+  createTodo(
+    data: {
+      title: "Learn how to GraphQL with FaunaDB"
+      completed: false
+      list: { connect: "291496906386833933" }
+    }
+  ) {
+    title
+    completed
+    list {
+      title
+    }
+  }
+}

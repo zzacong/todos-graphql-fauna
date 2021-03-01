@@ -1,0 +1,22 @@
+mutation CreateListWithTodos {
+  createList(
+    data: {
+      title: "The Basics"
+      todos: {
+        create: [
+          { completed: false, title: "Water" }
+          { completed: false, title: "Food" }
+          { completed: false, title: "Shelter" }
+        ]
+      }
+    }
+  ) {
+    _id
+    title
+    todos {
+      data {
+        title
+      }
+    }
+  }
+}

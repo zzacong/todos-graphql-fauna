@@ -1,0 +1,6 @@
+mutation CreateATodo {
+  createTodo(data: { title: "Build an awesome app!", completed: false }) {
+    title
+    completed
+  }
+}
